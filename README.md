@@ -5,7 +5,7 @@ Search your favorite breweries from the [Open Brewery API](https://www.openbrewe
 ## Installation
 
 ```bash
-npm install
+npm install && cd client/ && npm install && cd ..
 ```
 
 ```bash
