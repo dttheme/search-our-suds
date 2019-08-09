@@ -1,0 +1,82 @@
+@import "../../styles/colors.scss";
+.card {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  background: white;
+  box-shadow: 2px 2px 5px $accentSubtle;
+  border-radius: 5px;
+  border: 1px solid $accentSubtle;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__copy {
+  margin: 10px 0;
+  font-size: 12px;
+  h3 {
+    margin: 0 0 10px 0;
+  }
+}
+.card__favorite {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: $accentDark;
+}
+.card__favorite:hover {
+  transform: scale(1.2);
+  background-color: $accentBright;
+}
+.heart {
+  font-size: 20px;
+  vertical-align: -30%;
+}
+.heartFavoritetrue {
+  color: $accentBright;
+}
+.cardFavoritetrue {
+  border: 1px solid gold;
+}
+.buttonFavoritetrue {
+  background-color: $accentDark;
+}
+.buttonFavoritetrue:hover .heart {
+  color: $accentDark;
+}
+.type {
+  font-size: 12px;
+  font-weight: 900;
+}
+.micro {
+  color: green;
+}
+.brewpub {
+  color: blue;
+}
+.planning {
+  color: red;
+}
+.contract {
+  color: orange;
+}
+.regional {
+  color: purple;
+}
+.proprietor {
+  color: teal;
+}
+// large, bar
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 600px;
+  }
+}

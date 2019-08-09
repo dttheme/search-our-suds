@@ -1,0 +1,115 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: $bodyBackground;
+  font-family: $copy;
+}
+button,
+input {
+  margin: 0;
+  color: white;
+  padding: 10px;
+  border: 2px solid transparent;
+}
+input:focus {
+  outline: none;
+  border: 2px solid $accentBright;
+}
+input:-webkit-autofill {
+  box-shadow: white;
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: #333;
+}
+input:-webkit-autofill:focus {
+  box-shadow: white;
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: #333;
+}
+button {
+  background: $accentBright;
+  transition: all 0.3s ease;
+}
+button:hover,
+button:focus {
+  background-color: $accentDark;
+  outline: none;
+  border: 2px solid $accentBright;
+}
+a {
+  color: $accentBright;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover,
+a:focus {
+  color: $accentSubtle;
+  text-decoration: underline;
+  outline: none;
+  border: 2px solid $accentBright;
+}
+.app {
+  max-width: 700px;
+  margin: 20px auto;
+  background: $appBackground;
+  padding: 30px;
+  color: $accentDark;
+  border-radius: 10px;
+}
+.app__header {
+  font-family: $display;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: $accentDark;
+    font-size: 80px;
+    transition: all 0.3s ease;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: $accentDark;
+  }
+}
+.app__header a:hover,
+.app__header a:focus {
+  color: $accentBright;
+}
+.results {
+  display: flex;
+}
+.results__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .app {
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .app__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin-bottom: 0;
+    }
+    h2 {
+      margin: 5px;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+  }
+}

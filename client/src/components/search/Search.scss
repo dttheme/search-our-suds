@@ -1,0 +1,21 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+.search {
+  display: flex;
+  margin-bottom: 15px;
+}
+.search__button,
+.search__input {
+  font-weight: 900;
+  font-size: 16px;
+}
+.search__button {
+  width: 10%;
+  border-radius: 0 10px 10px 0;
+}
+.search__input {
+  width: 90%;
+  font-family: $copy;
+  color: $accentDark;
+  border-radius: 10px 0 0 10px;
+}
